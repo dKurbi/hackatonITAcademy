@@ -43,6 +43,15 @@ dependencies {
 
 }
 
+tasks {
+	bootJar {
+		enabled = true
+	}
+	jar {
+		enabled = false
+	}
+}
+
 
 tasks.withType<Test> {
 	useJUnitPlatform()
