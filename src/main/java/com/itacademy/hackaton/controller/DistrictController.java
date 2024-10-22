@@ -25,7 +25,19 @@ public class DistrictController {
     public RouterFunction<ServerResponse> districtRouteFunctions() {
 
         return route(GET("/api/districts/"), this::getAllDistricts)
-                .andRoute(GET("/api/districts/infantil"), this::getInfantilPercentage);
+                .andRoute(GET("/api/districts/infantil"), this::getInfantilPercentage)
+                .andRoute(GET("/api/districts/primary"), this::getPrimaryPercentage);
+
+    }
+
+    private Mono<ServerResponse> getPrimaryPercentage(ServerRequest request) {
+
+        return districtCrudService.getPrimaryPercentage()
+
+                .collectList()
+
+                // Response
+                .flatMap(incomeResponseModel -> ok().contentType(APPLICATION_JSON).bodyValue(incomeResponseModel));
 
     }
 

@@ -67,6 +67,29 @@ public final class DistrictCrudService {
                 .onErrorMap(e -> new DistrictRetrievalException(e.getMessage()));
     }
 
+    public Flux<InstitutionsResponseModel> getPrimaryPercentage() {
+
+        return districtDataRepository.findAll()
+
+                .collectList()
+
+                .flatMapMany(districtList -> {
+
+                    if (districtList.isEmpty())
+                        return error(new NoDistrictFoundException(AN_EMPTY_FLUX));
+
+                    int totalPrimary = districtList.stream()
+                            .mapToInt(DistrictDataRecord::getPrimarySchools)
+                            .sum();
+
+                    return fromIterable(districtList)
+                            .map(district -> mapToInstitutionsResponseModel(district, totalPrimary));
+
+                })
+
+                .onErrorMap(e -> new DistrictRetrievalException(e.getMessage()));
+    }
+
     private static InstitutionsResponseModel mapToInstitutionsResponseModel(DistrictDataRecord district, int totalInfantil) {
         double percentage = ((double) district.getInfantSchools() / totalInfantil) * 100;
 
