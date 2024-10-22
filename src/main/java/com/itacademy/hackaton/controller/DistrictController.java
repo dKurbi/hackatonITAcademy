@@ -65,7 +65,7 @@ public class DistrictController {
         return route(GET("/api/districts/"), this::getAllDistricts)
                 .andRoute(GET("/api/districts/infantil"), this::getInfantilPercentage)
                 .andRoute(GET("/api/districts/primary"), this::getPrimaryPercentage)
-                .andRoute(GET("/api/district/secondary"), this::getSeccondaryPercentage);
+                .andRoute(GET("/api/districts/secondary"), this::getSeccondaryPercentage);
 
     }
 
