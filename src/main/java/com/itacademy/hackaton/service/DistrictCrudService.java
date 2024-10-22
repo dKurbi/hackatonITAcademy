@@ -60,7 +60,7 @@ public final class DistrictCrudService {
                             .sum();
 
                     return fromIterable(districtList)
-                            .map(district -> mapToInstitutionsResponseModel(district, totalInfantil)); // Your existing method
+                            .map(district -> mapToInstitutionsInfantilResponseModel(district, totalInfantil)); // Your existing method
 
                 })
 
@@ -83,14 +83,37 @@ public final class DistrictCrudService {
                             .sum();
 
                     return fromIterable(districtList)
-                            .map(district -> mapToInstitutionsResponseModel(district, totalPrimary));
+                            .map(district -> mapToInstitutionsPrimaryResponseModel(district, totalPrimary));
 
                 })
 
                 .onErrorMap(e -> new DistrictRetrievalException(e.getMessage()));
     }
 
-    private static InstitutionsResponseModel mapToInstitutionsResponseModel(DistrictDataRecord district, int totalInfantil) {
+    public Flux<InstitutionsResponseModel> getSecondaryPercentage() {
+
+        return districtDataRepository.findAll()
+
+                .collectList()
+
+                .flatMapMany(districtList -> {
+
+                    if (districtList.isEmpty())
+                        return error(new NoDistrictFoundException(AN_EMPTY_FLUX));
+
+                    int totalSecondary = districtList.stream()
+                            .mapToInt(DistrictDataRecord::getSecondarySchools)
+                            .sum();
+
+                    return fromIterable(districtList)
+                            .map(district -> mapToInstitutionsSecondaryResponseModel(district, totalSecondary));
+
+                })
+
+                .onErrorMap(e -> new DistrictRetrievalException(e.getMessage()));
+    }
+
+    private static InstitutionsResponseModel mapToInstitutionsInfantilResponseModel(DistrictDataRecord district, int totalInfantil) {
         double percentage = ((double) district.getInfantSchools() / totalInfantil) * 100;
 
 
@@ -100,6 +123,33 @@ public final class DistrictCrudService {
                 district.getPrimarySchools(),
                 percentage
         );
+
+    }
+
+    private static InstitutionsResponseModel mapToInstitutionsSecondaryResponseModel(DistrictDataRecord district, int totalSecondary) {
+        double percentage = ((double) district.getSecondarySchools() / totalSecondary) * 100;
+
+
+        return new InstitutionsResponseModel(
+                district.getId(),
+                district.getDistrictName(),
+                district.getSecondarySchools(),
+                percentage
+        );
+
+    }
+
+    private static InstitutionsResponseModel mapToInstitutionsPrimaryResponseModel(DistrictDataRecord district, int totalPrimary) {
+        double percentage = ((double) district.getPrimarySchools() / totalPrimary) * 100;
+
+
+        return new InstitutionsResponseModel(
+                district.getId(),
+                district.getDistrictName(),
+                district.getPrimarySchools(),
+                percentage
+        );
+
     }
 
     private static IncomeResponseModel addColorValueToRecord(Tuple2<Long, IncomeResponseModel> recordTuple) {

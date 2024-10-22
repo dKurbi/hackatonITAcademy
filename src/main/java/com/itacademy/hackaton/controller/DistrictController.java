@@ -64,7 +64,19 @@ public class DistrictController {
 
         return route(GET("/api/districts/"), this::getAllDistricts)
                 .andRoute(GET("/api/districts/infantil"), this::getInfantilPercentage)
-                .andRoute(GET("/api/districts/primary"), this::getPrimaryPercentage);
+                .andRoute(GET("/api/districts/primary"), this::getPrimaryPercentage)
+                .andRoute(GET("/api/district/secondary"), this::getSeccondaryPercentage);
+
+    }
+
+    private Mono<ServerResponse> getSeccondaryPercentage(ServerRequest request) {
+
+        return districtCrudService.getSecondaryPercentage()
+
+                .collectList()
+
+                // Response
+                .flatMap(incomeResponseModel -> ok().contentType(APPLICATION_JSON).bodyValue(incomeResponseModel));
 
     }
 
