@@ -1,5 +1,7 @@
 package com.itacademy.hackaton.adapter.controllers;
 
+import com.itacademy.hackaton.application.port.in.DistrictCrudService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.server.RouterFunction;
@@ -7,11 +9,17 @@ import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 
+import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
 import static org.springframework.web.reactive.function.server.RouterFunctions.route;
+import static org.springframework.web.reactive.function.server.ServerResponse.ok;
+import static org.springframework.web.reactive.function.server.ServerResponse.status;
 
 @Configuration
+@RequiredArgsConstructor
 public class DistrictController {
+
+    private final DistrictCrudService districtCrudService;
 
     @Bean
     public RouterFunction<ServerResponse> districtRouteFunctions() {
@@ -22,6 +30,12 @@ public class DistrictController {
 
     private Mono<ServerResponse> getAllDistricts(ServerRequest request) {
 
+        return districtCrudService.getAllDistricts()
+
+                .collectList()
+
+                // Response
+                .flatMap(incomeResponseModel -> ok().contentType(APPLICATION_JSON).bodyValue(incomeResponseModel));
 
     }
 
