@@ -1,26 +1,27 @@
 package com.itacademy.hackaton.adapter.data.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table("df_final")
+@Table("districts")
 public class DistrictDataRecord {
+
     @Id
     private Integer id;
+
     @Column("nom_districte")
     private String districtName;
+
     @Column("renta_media")
     private Double avgIncome;
-    @Column("num_actividades")
-    private Integer totalActivities;
+
+    @Column("num_activitats")
+    private Double avgNumActivities;
+
 }
 
