@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
 @Getter
@@ -15,24 +16,18 @@ import org.springframework.data.relational.core.mapping.Table;
 public class DistrictDataRecord {
 
     @Id
-    private Integer districtId;
-    private Integer recordYear;
-    private String equipment;
-    private String indicator;
-    private Double value;
-    private String dataNotes;
-    private String dataEquipment;
-    private String ownership;
-    private String generalType;
-    private String equipmentType;
-    private String scope;
-    private Double latitude;
-    private Double longitude;
-    private String districtName;
-    private Integer neighborhoodCode;
-    private String neighborhoodName;
-    private Integer grossIncomeByNeighborhood;
-    private Integer grossIncomeByDistrict;
+    @Column("district_id")
+    private Integer id;
+    @Column("district_name")
+    private String nom_districte;
+    @Column("neighborhood_name")
+    private String nom_barri;
+    @Column("neighborhood_code")
+    private String codi_barri;
+    @Column("neighborhood_rent_mean")
+    private String renta_barri_mean;
+    @Column("district_rent_mean")
+    private String renta_distrito_mean;
 
 }
 
