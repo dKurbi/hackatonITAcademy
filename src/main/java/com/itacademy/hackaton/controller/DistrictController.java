@@ -151,10 +151,7 @@ public class DistrictController {
     private Mono<ServerResponse> getSeccondaryPercentage(ServerRequest request) {
 
         return districtCrudService.getSecondaryPercentage()
-
                 .collectList()
-
-                // Response
                 .flatMap(incomeResponseModel -> ok().contentType(APPLICATION_JSON).bodyValue(incomeResponseModel));
 
     }
@@ -162,10 +159,7 @@ public class DistrictController {
     private Mono<ServerResponse> getPrimaryPercentage(ServerRequest request) {
 
         return districtCrudService.getPrimaryPercentage()
-
                 .collectList()
-
-                // Response
                 .flatMap(incomeResponseModel -> ok().contentType(APPLICATION_JSON).bodyValue(incomeResponseModel));
 
     }
@@ -173,10 +167,7 @@ public class DistrictController {
     private Mono<ServerResponse> getInfantilPercentage(ServerRequest request) {
 
         return districtCrudService.getInfantilPercentage()
-
                 .collectList()
-
-                // Response
                 .flatMap(incomeResponseModel -> ok().contentType(APPLICATION_JSON).bodyValue(incomeResponseModel));
 
     }
@@ -184,12 +175,7 @@ public class DistrictController {
     private Mono<ServerResponse> getAllDistricts(ServerRequest request) {
 
         return districtCrudService.getAllDistricts()
-
                 .collectList()
-
-                // Response
                 .flatMap(incomeResponseModel -> ok().contentType(APPLICATION_JSON).bodyValue(incomeResponseModel));
-
     }
-
 }
