@@ -41,6 +41,10 @@ dependencies {
 	implementation("io.r2dbc:r2dbc-h2")
 	runtimeOnly("com.h2database:h2")
 
+	// OpenAPI
+	implementation("org.springdoc:springdoc-openapi-starter-webflux-ui:2.6.0")
+
+
 }
 
 
