@@ -12,7 +12,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table("districts")
-public class District {
+public class DistrictDataRecord {
 
     @Id
     private Integer districtId;
