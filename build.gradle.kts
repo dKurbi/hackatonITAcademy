@@ -24,6 +24,7 @@ repositories {
 }
 
 dependencies {
+
 	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
 	compileOnly("org.projectlombok:lombok")
@@ -36,7 +37,12 @@ dependencies {
 	// Open CSV
 	implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.15.2")
 
+	// H2 things
+	implementation("io.r2dbc:r2dbc-h2")
+	runtimeOnly("com.h2database:h2")
+
 }
+
 
 tasks.withType<Test> {
 	useJUnitPlatform()

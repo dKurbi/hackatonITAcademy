@@ -11,7 +11,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table("districts")
+@Table("sample_datos")
 public class DistrictDataRecord {
 
     @Id
