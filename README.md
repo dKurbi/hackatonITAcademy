@@ -18,7 +18,7 @@ Esta API permite consultar información sobre los distritos de Barcelona, inclui
     "name": "string",
     "valor": 0,
     "colorIndex": 0
-  }, ...
+  }
 ]
 ```
 2. **GET `/api/districts/infantil`**
@@ -34,8 +34,7 @@ Esta API permite consultar información sobre los distritos de Barcelona, inclui
         "name": "Ciutat Vella",
         "total": 18,
         "percentage": 5.248618784530387
-      },
-      ...
+      }
     ]
     ```
 
@@ -52,8 +51,7 @@ Esta API permite consultar información sobre los distritos de Barcelona, inclui
         "name": "Ciutat Vella",
         "total": 18,
         "percentage": 5.389221556886228
-      },
-      ...
+      }
     ]
     ```
 
@@ -70,8 +68,7 @@ Esta API permite consultar información sobre los distritos de Barcelona, inclui
         "name": "Ciutat Vella",
         "total": 14,
         "percentage": 5.957446808510639
-      },
-      ...
+      }
     ]
     ```
 
