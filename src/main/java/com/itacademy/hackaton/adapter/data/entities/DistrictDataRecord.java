@@ -16,7 +16,6 @@ public class DistrictDataRecord {
 
     @Id
     private Integer districtId;
-
     private Integer recordYear;
     private String equipment;
     private String indicator;
@@ -32,6 +31,8 @@ public class DistrictDataRecord {
     private String districtName;
     private Integer neighborhoodCode;
     private String neighborhoodName;
+    private Integer grossIncomeByNeighborhood;
+    private Integer grossIncomeByDistrict;
 
 }
 
