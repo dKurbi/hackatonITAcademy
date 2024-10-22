@@ -24,7 +24,7 @@ repositories {
 }
 
 dependencies {
-
+	implementation("com.h2database:h2")
 	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
 	compileOnly("org.projectlombok:lombok")
