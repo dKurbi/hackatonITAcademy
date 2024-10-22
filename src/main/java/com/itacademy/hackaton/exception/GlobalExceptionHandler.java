@@ -1,4 +1,4 @@
-package com.itacademy.hackaton.application.exceptions;
+package com.itacademy.hackaton.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

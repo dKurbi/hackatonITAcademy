@@ -1,9 +1,10 @@
-package com.itacademy.hackaton.adapter.data.entities;
+package com.itacademy.hackaton.entity;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
+
 
 @Data
 @AllArgsConstructor

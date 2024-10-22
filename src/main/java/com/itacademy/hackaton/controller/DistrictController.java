@@ -1,6 +1,6 @@
-package com.itacademy.hackaton.adapter.controllers;
+package com.itacademy.hackaton.controller;
 
-import com.itacademy.hackaton.application.port.in.DistrictCrudService;
+import com.itacademy.hackaton.service.DistrictCrudService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

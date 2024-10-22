@@ -1,4 +1,4 @@
-package com.itacademy.hackaton.adapter.controllers;
+package com.itacademy.hackaton.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

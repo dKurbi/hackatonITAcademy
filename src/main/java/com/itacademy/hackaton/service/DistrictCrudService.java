@@ -1,10 +1,10 @@
-package com.itacademy.hackaton.application.port.in;
+package com.itacademy.hackaton.service;
 
-import com.itacademy.hackaton.adapter.controllers.IncomeResponseModel;
-import com.itacademy.hackaton.adapter.data.entities.DistrictDataRecord;
-import com.itacademy.hackaton.adapter.data.repository.DistrictDataRepository;
-import com.itacademy.hackaton.application.exceptions.DistrictRetrievalException;
-import com.itacademy.hackaton.application.exceptions.NoDistrictFoundException;
+import com.itacademy.hackaton.entity.IncomeResponseModel;
+import com.itacademy.hackaton.entity.DistrictDataRecord;
+import com.itacademy.hackaton.repository.DistrictDataRepository;
+import com.itacademy.hackaton.exception.DistrictRetrievalException;
+import com.itacademy.hackaton.exception.NoDistrictFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

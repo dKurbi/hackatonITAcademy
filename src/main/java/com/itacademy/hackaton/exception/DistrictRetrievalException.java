@@ -1,4 +1,4 @@
-package com.itacademy.hackaton.application.exceptions;
+package com.itacademy.hackaton.exception;
 
 public class DistrictRetrievalException extends RuntimeException{
     public DistrictRetrievalException() {
