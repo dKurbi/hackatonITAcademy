@@ -1,0 +1,74 @@
+,Nom_Districte,Nom_Barri,Codi_Barri,renta_barrio_mean,renta_distrito_mean
+0,Ciutat Vella,"Sant Pere, Santa Caterina i la Ribera",4,39500.0,35952.25
+1,Ciutat Vella,el Barri Gòtic,2,39075.0,35952.25
+2,Ciutat Vella,el Raval,1,32095.0,35952.25
+3,Ciutat Vella,la Barceloneta,3,33139.0,35952.25
+4,Gràcia,Vallcarca i els Penitents,28,64038.0,55938.6
+5,Gràcia,el Camp d'en Grassot i Gràcia Nova,32,56444.0,55938.6
+6,Gràcia,el Coll,29,47144.0,55938.6
+7,Gràcia,la Salut,30,59977.0,55938.6
+8,Gràcia,la Vila de Gràcia,31,52090.0,55938.6
+9,Horta-Guinardó,Can Baró,34,46600.0,46823.63636363636
+10,Horta-Guinardó,Horta,43,48115.0,46823.63636363636
+11,Horta-Guinardó,Montbau,40,44422.0,46823.63636363636
+12,Horta-Guinardó,Sant Genís dels Agudells,39,41805.0,46823.63636363636
+13,Horta-Guinardó,el Baix Guinardó,33,49444.0,46823.63636363636
+14,Horta-Guinardó,el Carmel,37,34740.0,46823.63636363636
+15,Horta-Guinardó,el Guinardó,35,47612.0,46823.63636363636
+16,Horta-Guinardó,la Clota,42,46694.0,46823.63636363636
+17,Horta-Guinardó,la Font d'en Fargues,36,62199.0,46823.63636363636
+18,Horta-Guinardó,la Teixonera,38,38744.0,46823.63636363636
+19,Horta-Guinardó,la Vall d'Hebron,41,54685.0,46823.63636363636
+20,L'Eixample,Sant Antoni,10,52051.0,58882.333333333336
+21,L'Eixample,el Fort Pienc,5,54774.0,58882.333333333336
+22,L'Eixample,l'Antiga Esquerra de l'Eixample,8,64182.0,58882.333333333336
+23,L'Eixample,la Dreta de l'Eixample,7,71080.0,58882.333333333336
+24,L'Eixample,la Nova Esquerra de l'Eixample,9,59404.0,58882.333333333336
+25,L'Eixample,la Sagrada Família,6,51803.0,58882.333333333336
+26,Les Corts,Pedralbes,21,113460.0,82194.0
+27,Les Corts,la Maternitat i Sant Ramon,20,62988.0,82194.0
+28,Les Corts,les Corts,19,70134.0,82194.0
+29,Nou Barris,Can Peguera,47,28117.0,35065.769230769234
+30,Nou Barris,Canyelles,49,42741.0,35065.769230769234
+31,Nou Barris,Ciutat Meridiana,55,29085.0,35065.769230769234
+32,Nou Barris,Porta,45,38676.0,35065.769230769234
+33,Nou Barris,Torre Baró,54,32808.0,35065.769230769234
+34,Nou Barris,Vallbona,56,31943.0,35065.769230769234
+35,Nou Barris,Verdun,51,31466.0,35065.769230769234
+36,Nou Barris,Vilapicina i la Torre Llobeta,44,44763.0,35065.769230769234
+37,Nou Barris,el Turó de la Peira,46,34156.0,35065.769230769234
+38,Nou Barris,la Guineueta,48,44819.0,35065.769230769234
+39,Nou Barris,la Prosperitat,52,35895.0,35065.769230769234
+40,Nou Barris,la Trinitat Nova,53,29672.0,35065.769230769234
+41,Nou Barris,les Roquetes,50,31714.0,35065.769230769234
+42,Sant Andreu,Baró de Viver,58,29438.0,41866.71428571428
+43,Sant Andreu,Navas,63,47640.0,41866.71428571428
+44,Sant Andreu,Sant Andreu,60,49965.0,41866.71428571428
+45,Sant Andreu,el Bon Pastor,59,40145.0,41866.71428571428
+46,Sant Andreu,el Congrés i els Indians,62,46007.0,41866.71428571428
+47,Sant Andreu,la Sagrera,61,46630.0,41866.71428571428
+48,Sant Andreu,la Trinitat Vella,57,33242.0,41866.71428571428
+49,Sant Martí,Diagonal Mar i el Front Marítim del Poblenou,69,62859.0,52169.7
+50,Sant Martí,Provençals del Poblenou,71,48276.0,52169.7
+51,Sant Martí,Sant Martí de Provençals,72,43800.0,52169.7
+52,Sant Martí,el Besòs i el Maresme,70,35137.0,52169.7
+53,Sant Martí,el Camp de l'Arpa del Clot,64,47523.0,52169.7
+54,Sant Martí,el Clot,65,49945.0,52169.7
+55,Sant Martí,el Parc i la Llacuna del Poblenou,66,51913.0,52169.7
+56,Sant Martí,el Poblenou,68,55528.0,52169.7
+57,Sant Martí,la Verneda i la Pau,73,41220.0,52169.7
+58,Sant Martí,la Vila Olímpica del Poblenou,67,85496.0,52169.7
+59,Sants-Montjuïc,Hostafrancs,15,45369.0,43332.125
+60,Sants-Montjuïc,Sants,18,49765.0,43332.125
+61,Sants-Montjuïc,Sants-Badal,17,44907.0,43332.125
+62,Sants-Montjuïc,el Poble Sec,11,39304.0,43332.125
+63,Sants-Montjuïc,la Bordeta,16,46708.0,43332.125
+64,Sants-Montjuïc,la Font de la Guatlla,14,47062.0,43332.125
+65,Sants-Montjuïc,la Marina de Port,13,40722.0,43332.125
+66,Sants-Montjuïc,la Marina del Prat Vermell,12,32820.0,43332.125
+67,Sarrià-Sant Gervasi,Sant Gervasi- Galvany,26,100172.0,97842.0
+68,Sarrià-Sant Gervasi,Sant Gervasi- la Bonanova,25,102198.0,97842.0
+69,Sarrià-Sant Gervasi,Sarrià,23,102317.0,97842.0
+70,Sarrià-Sant Gervasi,"Vallvidrera, el Tibidabo i les Planes",22,87477.0,97842.0
+71,Sarrià-Sant Gervasi,el Putxet i el Farró,27,72186.0,97842.0
+72,Sarrià-Sant Gervasi,les Tres Torres,24,122702.0,97842.0

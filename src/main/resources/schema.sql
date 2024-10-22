@@ -1,20 +1,9 @@
-CREATE TABLE sample_datos
+CREATE TABLE district_data_records
 (
-
-    Record_Year      INT,          -- Renamed "Year" to "Record_Year"
-    Equipament       VARCHAR(255), -- Changed TEXT to VARCHAR(255)
-    Indicador        VARCHAR(255), -- Changed TEXT to VARCHAR(255)
-    Valor            DOUBLE,
-    Notes_Dades      VARCHAR(255), -- Changed TEXT to VARCHAR(255)
-    Notes_Equipament VARCHAR(255), -- Changed TEXT to VARCHAR(255)
-    Codi_Districte   INT,
-    Titularitat      VARCHAR(255), -- Changed TEXT to VARCHAR(255)
-    TipusGeneral     VARCHAR(255), -- Changed TEXT to VARCHAR(255)
-    TipusEquipament  VARCHAR(255), -- Changed TEXT to VARCHAR(255)
-    Ambit            VARCHAR(255), -- Changed TEXT to VARCHAR(255)
-    Latitud          DOUBLE,
-    Longitud         DOUBLE,
-    Nom_Districte    VARCHAR(255), -- Changed TEXT to VARCHAR(255)
-    Codi_Barri       INT,
-    Nom_Barri        VARCHAR(255)  -- Changed TEXT to VARCHAR(255)
+    id                  INT PRIMARY KEY AUTO_INCREMENT, -- Unique ID for each record
+    nom_districte       VARCHAR(255),                   -- District name
+    nom_barri           VARCHAR(255),                   -- Neighborhood name
+    codi_barri          INT,                            -- Neighborhood code
+    renta_barrio_mean   DECIMAL(10, 2),                 -- Average income in the neighborhood
+    renta_distrito_mean DECIMAL(10, 2)                  -- Average income in the district
 );
