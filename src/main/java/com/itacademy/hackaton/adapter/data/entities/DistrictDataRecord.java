@@ -20,5 +20,7 @@ public class DistrictDataRecord {
     private String districtName;
     @Column("renta_media")
     private Double avgIncome;
+    @Column("num_actividades")
+    private Integer totalActivities;
 }
 
