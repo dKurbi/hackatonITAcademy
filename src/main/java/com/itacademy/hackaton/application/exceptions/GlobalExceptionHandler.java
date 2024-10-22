@@ -1,7 +1,5 @@
-package com.itacademy.hackaton.config;
+package com.itacademy.hackaton.application.exceptions;
 
-import com.itacademy.hackaton.application.exceptions.DistrictRetrievalException;
-import com.itacademy.hackaton.application.exceptions.NoDistrictFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
