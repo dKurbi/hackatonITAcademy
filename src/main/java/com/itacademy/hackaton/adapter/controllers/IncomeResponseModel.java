@@ -1,9 +1,17 @@
 package com.itacademy.hackaton.adapter.controllers;
 
-public record IncomeResponseModel(
-        String name,
-        int id,
-        Double valor,
-        Double index
-) {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class IncomeResponseModel {
+
+    private Integer id;
+    private String name;
+    private Double valor;
+    private Integer colorIndex;
+
 }
