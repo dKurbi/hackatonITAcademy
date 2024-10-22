@@ -10,6 +10,7 @@ import reactor.core.publisher.Mono;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
+
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public Mono<ResponseEntity<String>> handleGeneralException(Exception ex) {

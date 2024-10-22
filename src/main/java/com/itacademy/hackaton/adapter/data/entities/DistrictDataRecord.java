@@ -12,7 +12,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table("df_final")
+@Table("df_final_1")
 public class DistrictDataRecord {
     @Id
     private Integer id;
