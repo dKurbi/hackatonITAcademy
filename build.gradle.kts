@@ -30,8 +30,13 @@ dependencies {
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.projectlombok:lombok")
+
+	// Testing
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
+	testImplementation("io.projectreactor:reactor-test")
+	testImplementation("org.mockito:mockito-core")
+	testImplementation("org.mockito:mockito-junit-jupiter")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
 	// Open CSV
@@ -40,6 +45,10 @@ dependencies {
 	// H2 things
 	implementation("io.r2dbc:r2dbc-h2")
 	runtimeOnly("com.h2database:h2")
+
+	// OpenAPI
+	implementation("org.springdoc:springdoc-openapi-starter-webflux-ui:2.6.0")
+
 
 }
 
