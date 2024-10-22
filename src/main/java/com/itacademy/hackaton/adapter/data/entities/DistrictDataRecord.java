@@ -20,7 +20,7 @@ public class DistrictDataRecord {
     @Column("renta_media")
     private Double avgIncome;
 
-    @Column("num_activitats")
+    @Column("num_activitades")
     private Double avgNumActivities;
 
 }
