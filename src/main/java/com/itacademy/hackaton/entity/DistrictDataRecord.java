@@ -5,7 +5,6 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,14 +14,25 @@ public class DistrictDataRecord {
     @Id
     private Integer id;
 
-    @Column("nom_districte")
+    @Column("addresses_district_name")
     private String districtName;
 
     @Column("renta_media")
-    private Double avgIncome;
+    private Integer avgIncome;
 
-    @Column("num_activitades")
-    private Double avgNumActivities;
+    @Column("num_actividades")
+    private Integer numActivities;
+
+    @Column("oferta_educativa")
+    private Integer totalEducationalOfferings;
+
+    @Column("infantil")
+    private Integer infantSchools;
+
+    @Column("primarias")
+    private Integer primarySchools;
+
+    @Column("secundarias")
+    private Integer secondarySchools;
 
 }
-

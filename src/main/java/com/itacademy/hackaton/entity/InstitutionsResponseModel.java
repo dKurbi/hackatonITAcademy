@@ -7,11 +7,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class IncomeResponseModel {
+public class InstitutionsResponseModel {
 
     private Integer id;
     private String name;
-    private Integer valor;
-    private Integer colorIndex;
+    private Integer total;
+    private Double percentage;
 
 }

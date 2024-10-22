@@ -24,7 +24,19 @@ public class DistrictController {
     @Bean
     public RouterFunction<ServerResponse> districtRouteFunctions() {
 
-        return route(GET("/api/districts/"), this::getAllDistricts);
+        return route(GET("/api/districts/"), this::getAllDistricts)
+                .andRoute(GET("/api/districts/infantil"), this::getInfantilPercentage);
+
+    }
+
+    private Mono<ServerResponse> getInfantilPercentage(ServerRequest request) {
+
+        return districtCrudService.getInfantilPercentage()
+
+                .collectList()
+
+                // Response
+                .flatMap(incomeResponseModel -> ok().contentType(APPLICATION_JSON).bodyValue(incomeResponseModel));
 
     }
 
