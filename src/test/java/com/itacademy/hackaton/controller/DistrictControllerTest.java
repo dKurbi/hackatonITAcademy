@@ -34,8 +34,8 @@ public class DistrictControllerTest {
 
     @Test
     public void testGetAllDistrictsSuccess() {
-        IncomeResponseModel district1 = new IncomeResponseModel(1, "Eixample", 30000.0, 1);
-        IncomeResponseModel district2 = new IncomeResponseModel(2, "Ciutat Vella", 25000.0, 2);
+        IncomeResponseModel district1 = new IncomeResponseModel(1, "Eixample", 30000, 1);
+        IncomeResponseModel district2 = new IncomeResponseModel(2, "Ciutat Vella", 25000, 2);
 
         List<IncomeResponseModel> mockDistricts = Arrays.asList(district1, district2);
         when(districtCrudService.getAllDistricts()).thenReturn(Flux.fromIterable(mockDistricts));
