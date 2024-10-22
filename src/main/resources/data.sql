@@ -1,0 +1,10 @@
+INSERT INTO Districts (Nom_Districte, renta_media, num_actividades) VALUES ('Ciutat Vella', 35253.0, 561.0);
+INSERT INTO Districts (Nom_Districte, renta_media, num_actividades) VALUES ('Gràcia', 55474.0, 549.0);
+INSERT INTO Districts (Nom_Districte, renta_media, num_actividades) VALUES ('Horta-Guinardó', 45757.0, 304.0);
+INSERT INTO Districts (Nom_Districte, renta_media, num_actividades) VALUES ('Eixample', 59030.0, 1082.0);
+INSERT INTO Districts (Nom_Districte, renta_media, num_actividades) VALUES ('Les Corts', 73574.0, 421.0);
+INSERT INTO Districts (Nom_Districte, renta_media, num_actividades) VALUES ('Nou Barris', 37251.0, 431.0);
+INSERT INTO Districts (Nom_Districte, renta_media, num_actividades) VALUES ('Sant Andreu', 46534.0, 616.0);
+INSERT INTO Districts (Nom_Districte, renta_media, num_actividades) VALUES ('Sant Martí', 48793.0, 571.0);
+INSERT INTO Districts (Nom_Districte, renta_media, num_actividades) VALUES ('Sants-Montjuïc', 44619.0, 1117.0);
+INSERT INTO Districts (Nom_Districte, renta_media, num_actividades) VALUES ('Sarrià-Sant Gervasi', 97609.0, 723.0);
