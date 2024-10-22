@@ -12,7 +12,7 @@ public class CorsGlobalConfiguration implements WebFluxConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry corsRegistry) {
         corsRegistry.addMapping("/**")
-                .allowedOrigins("https://edu-front-delta.vercel.app/")
+                .allowedOrigins("https://edu-front-delta.vercel.app/", "https://events.mapbox.com/events/**")
                 .allowedMethods("GET")
                 .maxAge(3600);
     }
